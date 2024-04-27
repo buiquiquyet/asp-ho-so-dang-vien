@@ -55,33 +55,18 @@ namespace asp.Respositories
         public async Task<T?> GetByIdAsync(string id) =>
             await _collection.Find(Builders<T>.Filter.Eq("_id", ObjectId.Parse(id))).FirstOrDefaultAsync();
 
-        public async Task<T> GetUserByEmailOrNameAndPassword(string emailOrName, string password)
+        public async Task<T> GetUserByTenDangNhapAndPassword(string tendangnhap, string matkhau)
         {
             var filter = Builders<T>.Filter.And(
-                Builders<T>.Filter.Or(
-                    Builders<T>.Filter.Eq("email", emailOrName),
-                    Builders<T>.Filter.Eq("name", emailOrName)
-                ),
-                Builders<T>.Filter.Eq("password", password)
+                Builders<T>.Filter.Eq("tendangnhap", tendangnhap),
+                Builders<T>.Filter.Eq("matkhau", matkhau)
             );
 
             var user = await _collection.Find(filter).FirstOrDefaultAsync();
 
             return user;
         }
-        public async Task<T> CheckEmailOrName(string emailOrName, string password)
-        {
-            var filter = Builders<T>.Filter.And(
-                Builders<T>.Filter.Or(
-                    Builders<T>.Filter.Eq("email", emailOrName),
-                    Builders<T>.Filter.Eq("name", emailOrName)
-                )
-            );
-
-            var user = await _collection.Find(filter).FirstOrDefaultAsync();
-
-            return user;
-        }
+        
 
         public async Task CreateAsync(T newEntity)
         {

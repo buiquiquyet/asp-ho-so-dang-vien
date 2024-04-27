@@ -5,7 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.Configure<MongoDbSetting>(builder.Configuration.GetSection("MongoDB"));
-builder.Services.AddSingleton<MongoDBService<Users>>();
+builder.Services.AddSingleton<UserService>();
+builder.Services.AddSingleton<DepartmentService>();
+builder.Services.AddSingleton<ClassService>();
 builder.Services.AddControllers()
     .AddJsonOptions(
         options => options.JsonSerializerOptions.PropertyNamingPolicy = null);

@@ -10,21 +10,43 @@ using MongoDB.Bson;
 namespace asp.Controllers 
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/user")]
     public class UserController : Controller
     {
-        private readonly MongoDBService<Users> _resp;
+        private readonly UserService _resp;
 
-        public UserController(MongoDBService<Users> resp)
+        public UserController(UserService resp)
         {
             _resp = resp;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllUsers()
+        public async Task<IActionResult> GetAllUsers(int page , int size )
         {
-            var users = await _resp.GetAllAsync();
-            return Ok(users);
+            var skipAmount = (page - 1) * size;
+            List<Users> datas;
+            long totalUsers ;
+            datas = await _resp.GetAllAsync(skipAmount, size);
+            totalUsers = await _resp.CountAsync();
+
+            if (datas != null && datas.Count > 0)
+            {
+                var response = new
+                {
+                    message = "success",
+                    datas,
+                    totalPages = (int)Math.Ceiling((double)totalUsers / size),
+                    currentPage = page,
+                    totalRecords = totalUsers
+                };
+
+                return Ok(response);
+            }
+            else
+            {
+                var errorObject = new { error = "Đã xảy ra lỗi" };
+                return Json(errorObject);
+            }
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUser(string id)
@@ -39,9 +61,39 @@ namespace asp.Controllers
             {
                 return NotFound();
             }
+            var response = new
+            {
+                message = "success",
+                data = user
+            };
+            return Ok(response);
+        }
+        [HttpGet("tendangnhap/{tendangnhap}")]
+        public async Task<IActionResult> GetByTenDangNhapAsync(string tendangnhap)
+        {
+
+
+            var user = await _resp.GetByTenDangNhapAsync(tendangnhap);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            var response = new {
+                message = "success",
+                data = user,
+            };
+            return Ok(response);
+        }
+        [HttpGet("department/{idDepartment}")]
+        public async Task<IActionResult> GetByIdDepartmentAsync(string idDepartment)
+        {
+            var user = await _resp.GetByIdDepartmentAsync(idDepartment);
+            if (user == null)
+            {
+                return NotFound();
+            }
             return Ok(user);
         }
-
         private bool IsValidObjectId(string id)
         {
             return ObjectId.TryParse(id, out _);
@@ -51,23 +103,46 @@ namespace asp.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(new { errorMessage = "Email/ Tên đăng nhập hoặc mật khẩu không chính xác. Xin vui lòng thử lại." });
+                return BadRequest(new { errorMessage = "Tên đăng nhập hoặc mật khẩu không chính xác. Xin vui lòng thử lại." });
             }
 
-            var user = await _resp.GetUserByEmailOrNameAndPassword(model.email, model.password);
+            var user = await _resp.GetUserByTenDangNhapAndPassword(model.tendangnhap, model.matkhau);
             if (user == null)
             {
-                return Ok(new { errorMessage = "Email/ Tên đăng nhập hoặc mật khẩu không chính xác. Xin vui lòng thử lại." });
+                return Ok(new { errorMessage = "Tên đăng nhập hoặc mật khẩu không chính xác. Xin vui lòng thử lại." });
             }
-            return Ok(user);
+            return Ok(new {message = "Đăng nhập thành công"});
         }
-        [HttpPost("/api/auth/register")]
-        public async Task<IActionResult> CreateEntity([FromBody] Users entityModel)
+
+        [HttpPost]
+        public async Task<IActionResult> CreateAsync([FromBody] Users newEntity)
         {
+            if (newEntity == null)
+            {
+                return BadRequest();
+            }
             try
             {
-                await _resp.CreateAsync(entityModel);
-                return Ok("Tạo tài khoản thành công");
+                await _resp.CreateAsync(newEntity);
+                var response = new { message = "Thêm người dùng thành công" };
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateUser(string id, [FromBody] Users updatedUser)
+        {
+            
+            try
+            {
+                await _resp.UpdateAsync(id, updatedUser);
+                return Ok(new { message = "Cập nhật người dùng thành công." });
             }
             catch (Exception ex)
             {
@@ -75,21 +150,18 @@ namespace asp.Controllers
             }
         }
 
-
-
-
-        /*[HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(string id, Users updatedUser)
-        {
-            await _resp.UpdateAsync(id, updatedUser);
-            return NoContent();
-        }
-
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(string id)
         {
-            await _resp.RemoveAsync(id);
-            return NoContent();
-        }*/
+            try
+            {
+                await _resp.RemoveAsync(id);
+                return Ok(new {message = "Xóa người dùng thành công."}); 
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }
