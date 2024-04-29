@@ -163,5 +163,19 @@ namespace asp.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+        [HttpDelete("deleteByIds")]
+        public async Task<IActionResult> DeleteUsers(List<string> ids)
+        {
+            try
+            {
+                var deletedCount = await _resp.DeleteByIdsAsync(ids);
+                var response = new { message = $"Xóa thành công {deletedCount} người dùng" };
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message); 
+            }
+        }
     }
 }

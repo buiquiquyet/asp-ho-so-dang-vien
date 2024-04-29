@@ -71,6 +71,12 @@ namespace asp.Respositories
             var filter = Builders<Users>.Filter.Eq("_id", ObjectId.Parse(id));
             await _collection.DeleteOneAsync(filter);
          }
+        public async Task<long> DeleteByIdsAsync(List<string> ids)
+        {
+            var filter = Builders<Users>.Filter.In("_id", ids.Select(ObjectId.Parse));
+            var result = await _collection.DeleteManyAsync(filter);
+            return result.DeletedCount;
+        }
 
 
     }
