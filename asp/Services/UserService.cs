@@ -59,6 +59,18 @@ namespace asp.Respositories
         {
             await _collection.InsertOneAsync(newEntity);
         }
+        public async Task<long> CreatetManyAsync(List<Users> entities)
+        {
+            try
+            {
+                await _collection.InsertManyAsync(entities);
+                return entities.Count;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi chèn nhiều người dùng.", ex);
+            }
+        }
 
         public async Task UpdateAsync(string id, Users updatedEntity) 
 {

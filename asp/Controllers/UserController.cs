@@ -132,7 +132,19 @@ namespace asp.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
-
+        [HttpPost("createMany")]
+        public async Task<IActionResult> InsertManyUsers(List<Users> users)
+        {
+            try
+            {
+                long insertedCount = await _resp.CreatetManyAsync(users);
+                return Ok(new { message = $"Đã thêm thành công {insertedCount} người dùng." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Đã xảy ra lỗi: {ex.Message}");
+            }
+        }
 
 
         [HttpPut("{id}")]
