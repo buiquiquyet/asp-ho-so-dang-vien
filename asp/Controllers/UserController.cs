@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using System.Threading.Tasks;
 using MongoDB.Bson;
+using asp.Services;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace asp.Controllers 
 {
@@ -15,9 +18,13 @@ namespace asp.Controllers
     {
         private readonly UserService _resp;
 
-        public UserController(UserService resp)
+        private readonly JWTService _jwtService;
+
+       
+        public UserController(UserService resp, JWTService jwtService)
         {
             _resp = resp;
+            _jwtService = jwtService;
         }
 
         [HttpGet]
@@ -111,9 +118,38 @@ namespace asp.Controllers
             {
                 return Ok(new { errorMessage = "Tên đăng nhập hoặc mật khẩu không chính xác. Xin vui lòng thử lại." });
             }
+            var token = _jwtService.GenerateToken(user.Id);
+            return Ok(new { token });
             return Ok(new {message = "Đăng nhập thành công"});
         }
+        [HttpGet("validate")]
+        public IActionResult ValidateToken(string token)
+        {
+            if (string.IsNullOrEmpty(token))
+            {
+                return BadRequest("Token is required.");
+            }
 
+            var userId = _jwtService.DecodeToken(token);
+            if (string.IsNullOrEmpty(userId))
+            {
+                return BadRequest("Invalid token.");
+            }
+
+
+            return Ok(new { userId });
+        }
+
+        private TokenValidationParameters GetValidationParameters()
+        {
+            return new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("hosodangvien-roleuser-authentizationToken")),
+                ValidateIssuer = false,
+                ValidateAudience = false
+            };
+        }
         [HttpPost]
         public async Task<IActionResult> CreateAsync([FromBody] Users newEntity)
         {
@@ -137,8 +173,16 @@ namespace asp.Controllers
         {
             try
             {
-                long insertedCount = await _resp.CreatetManyAsync(users);
-                return Ok(new { message = $"Đã thêm thành công {insertedCount} người dùng." });
+                if(users.Count > 0)
+                {
+                    long insertedCount = await _resp.CreatetManyAsync(users);
+                    return Ok(new { message = $"Đã thêm thành công {insertedCount} người dùng." });
+
+                }
+                else
+                {
+                    return BadRequest("Danh sách người dùng rỗng.");
+                }
             }
             catch (Exception ex)
             {

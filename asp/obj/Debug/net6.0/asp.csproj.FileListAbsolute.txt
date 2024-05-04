@@ -43,3 +43,11 @@ D:\Git Uploads\Ho_so_DV\asp\asp\obj\Debug\net6.0\refint\asp.dll
 D:\Git Uploads\Ho_so_DV\asp\asp\obj\Debug\net6.0\asp.pdb
 D:\Git Uploads\Ho_so_DV\asp\asp\obj\Debug\net6.0\asp.genruntimeconfig.cache
 D:\Git Uploads\Ho_so_DV\asp\asp\obj\Debug\net6.0\ref\asp.dll
+D:\Git Uploads\Ho_so_DV\asp\asp\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Git Uploads\Ho_so_DV\asp\asp\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Git Uploads\Ho_so_DV\asp\asp\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Git Uploads\Ho_so_DV\asp\asp\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Git Uploads\Ho_so_DV\asp\asp\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Git Uploads\Ho_so_DV\asp\asp\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Git Uploads\Ho_so_DV\asp\asp\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Git Uploads\Ho_so_DV\asp\asp\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
