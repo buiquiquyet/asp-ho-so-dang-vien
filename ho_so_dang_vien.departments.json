@@ -1,0 +1,77 @@
+[{
+  "_id": {
+    "$oid": "6625c31500b545ea5fc9c8e8"
+  },
+  "id_khoa": "9",
+  "name_khoa": "Khoa Công nghệ thông tin"
+},
+{
+  "_id": {
+    "$oid": "6625c31500b545ea5fc9c8e9"
+  },
+  "id_khoa": "11",
+  "name_khoa": "Khoa Cơ khí"
+},
+{
+  "_id": {
+    "$oid": "6625c31500b545ea5fc9c8ea"
+  },
+  "id_khoa": "12",
+  "name_khoa": "Khoa Điện"
+},
+{
+  "_id": {
+    "$oid": "6625c31500b545ea5fc9c8eb"
+  },
+  "id_khoa": "13",
+  "name_khoa": "Phòng Quản trị"
+},
+{
+  "_id": {
+    "$oid": "6625c31500b545ea5fc9c8ec"
+  },
+  "id_khoa": "14",
+  "name_khoa": "Khoa Ô tô"
+},
+{
+  "_id": {
+    "$oid": "6625c31500b545ea5fc9c8ed"
+  },
+  "id_khoa": "15",
+  "name_khoa": "Khoa Thực phẩm và Hóa học"
+},
+{
+  "_id": {
+    "$oid": "6625c31500b545ea5fc9c8ee"
+  },
+  "id_khoa": "16",
+  "name_khoa": "Khoa May và Thời trang"
+},
+{
+  "_id": {
+    "$oid": "6625c31500b545ea5fc9c8ef"
+  },
+  "id_khoa": "17",
+  "name_khoa": "Khoa Kinh tế"
+},
+{
+  "_id": {
+    "$oid": "6625c31500b545ea5fc9c8f0"
+  },
+  "id_khoa": "18",
+  "name_khoa": "Khoa Du lịch và Ngoại ngữ"
+},
+{
+  "_id": {
+    "$oid": "6625c31500b545ea5fc9c8f1"
+  },
+  "id_khoa": "19",
+  "name_khoa": "Khoa Giáo dục Chính trị và Thể chất"
+},
+{
+  "_id": {
+    "$oid": "6625c31500b545ea5fc9c8f2"
+  },
+  "id_khoa": "20",
+  "name_khoa": "Khoa Khoa học Cơ bản"
+}]

@@ -1,0 +1,1568 @@
+[{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c8f4"
+  },
+  "nhom_id": "ADMIN",
+  "nhom_name": "Quản trị",
+  "nhom_admin": null,
+  "nhom_active": "1"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c8f5"
+  },
+  "nhom_id": "DK10-CK1",
+  "nhom_name": "Đại học khóa 10 Cơ khí 1",
+  "nhom_admin": "01004014",
+  "nhom_active": "1",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c8f6"
+  },
+  "nhom_id": "DK10-CK2",
+  "nhom_name": "Đại học khóa 10 Cơ khí 2",
+  "nhom_admin": "01004036",
+  "nhom_active": "1",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c8f7"
+  },
+  "nhom_id": "DK10-CNTT",
+  "nhom_name": "Đại học khóa 10 Công nghệ thông tin",
+  "nhom_admin": "",
+  "nhom_active": "1",
+  "id_khoa": "9"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c8f8"
+  },
+  "nhom_id": "DK10-D1",
+  "nhom_name": "Đại học khóa 10 Điện 1",
+  "nhom_admin": "01006038",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c8f9"
+  },
+  "nhom_id": "DK10-D2",
+  "nhom_name": "Đại học khóa 10 Điện 2",
+  "nhom_admin": "01006026",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c8fa"
+  },
+  "nhom_id": "DK10-D3(HTĐ)",
+  "nhom_name": "Đại học khóa 10 Điện 3",
+  "nhom_admin": "01006020",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c8fb"
+  },
+  "nhom_id": "DK10-DT",
+  "nhom_name": "Đại học khóa 10 Điện tử",
+  "nhom_admin": "01007028",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c8fc"
+  },
+  "nhom_id": "DK10-KT",
+  "nhom_name": "Đại học khóa 10 Kế toán",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "17"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c8fd"
+  },
+  "nhom_id": "DK10-KTDK&TDH1",
+  "nhom_name": "Đại học khóa 10 Kỹ thuật điều khiển và Tự động hóa 1",
+  "nhom_admin": "01006005",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c8fe"
+  },
+  "nhom_id": "DK10-KTDK&TDH2",
+  "nhom_name": "Đại học khóa 10 Kỹ thuật điều khiển và Tự động hóa 2",
+  "nhom_admin": "01006040",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c8ff"
+  },
+  "nhom_id": "DK10-M",
+  "nhom_name": "Đại học khóa 10 May",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "16"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c900"
+  },
+  "nhom_id": "DK10-NTQ1",
+  "nhom_name": "Đại học khóa 10 Ngôn ngữ Trung 1",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c901"
+  },
+  "nhom_id": "DK10-NTQ2",
+  "nhom_name": "Đại học khóa 10 Ngôn ngữ Trung 2",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c902"
+  },
+  "nhom_id": "DK10-OTO1",
+  "nhom_name": "Đại học khóa 10 Ô tô 1",
+  "nhom_admin": "01001006",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c903"
+  },
+  "nhom_id": "DK10-OTO2",
+  "nhom_name": "Đại học khóa 10 Ô tô 2",
+  "nhom_admin": "01001018",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c904"
+  },
+  "nhom_id": "DK10-OTO3",
+  "nhom_name": "Đại học khóa 10 Ô tô 3",
+  "nhom_admin": "01001005",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c905"
+  },
+  "nhom_id": "DK10-OTO4(CNOTO)",
+  "nhom_name": "Đại học khóa 10 Ô tô 4",
+  "nhom_admin": "01001004",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c906"
+  },
+  "nhom_id": "DK10-QTKD",
+  "nhom_name": "Đại học khóa 10 Quản trị kinh doanh",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "17"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c907"
+  },
+  "nhom_id": "DK10-TP",
+  "nhom_name": "Đại học khóa 10 Thực phẩm",
+  "nhom_admin": "01003004",
+  "nhom_active": "1",
+  "id_khoa": "15"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c908"
+  },
+  "nhom_id": "DK10LT-CK",
+  "nhom_name": "Đại học khóa 10 liên thông Cơ khí",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c909"
+  },
+  "nhom_id": "DK10LT-CNTT",
+  "nhom_name": "Đại học khóa 10 liên thông Công nghệ thông tin",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "9"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c90a"
+  },
+  "nhom_id": "DK10LT-D",
+  "nhom_name": "Đại học khóa 10 liên thông Điện",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c90b"
+  },
+  "nhom_id": "DK10LT-DT",
+  "nhom_name": "Đại học khóa 10 liên thông Điện tử",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c90c"
+  },
+  "nhom_id": "DK10LT-KT",
+  "nhom_name": "Đại học khóa 10 liên thông Kế toán",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "17"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c90d"
+  },
+  "nhom_id": "DK10LT-OTO",
+  "nhom_name": "Đại học khóa 10 liên thông Ô tô",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c90e"
+  },
+  "nhom_id": "DK11-CK1",
+  "nhom_name": "Đại học khóa 11 Cơ khí 1",
+  "nhom_admin": "01004036",
+  "nhom_active": "1",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c90f"
+  },
+  "nhom_id": "DK11-CK2",
+  "nhom_name": "Đại học khóa 11 Cơ khí 2",
+  "nhom_admin": "01004040",
+  "nhom_active": "1",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c910"
+  },
+  "nhom_id": "DK11-CK3",
+  "nhom_name": "Đại học khóa 11 Cơ khí 3",
+  "nhom_admin": "01004055",
+  "nhom_active": "1",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c911"
+  },
+  "nhom_id": "DK11-CNTT1",
+  "nhom_name": "Đại học khóa 11 Công nghệ thông tin 1",
+  "nhom_admin": "01007027",
+  "nhom_active": "1",
+  "id_khoa": "9"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c912"
+  },
+  "nhom_id": "DK11-CNTT2",
+  "nhom_name": "Đại học khóa 11 Công nghệ thông tin 2",
+  "nhom_admin": "01007029",
+  "nhom_active": "1",
+  "id_khoa": "9"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c913"
+  },
+  "nhom_id": "DK11-D1",
+  "nhom_name": "Đại học khóa 11 Điện 1",
+  "nhom_admin": "01006033",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c914"
+  },
+  "nhom_id": "DK11-D2",
+  "nhom_name": "Đại học khóa 11 Điện 2",
+  "nhom_admin": "01006023",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c915"
+  },
+  "nhom_id": "DK11-D3",
+  "nhom_name": "Đại học khóa 11 Điện 3",
+  "nhom_admin": "01006036",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c916"
+  },
+  "nhom_id": "DK11-D4",
+  "nhom_name": "Đại học khóa 11 Điện 4",
+  "nhom_admin": "01006034",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c917"
+  },
+  "nhom_id": "DK11-DT",
+  "nhom_name": "Đại học khóa 11 Điện tử",
+  "nhom_admin": "01007026",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c918"
+  },
+  "nhom_id": "DK11-KT",
+  "nhom_name": "Đại học khóa 11 Kế toán",
+  "nhom_admin": "01010026",
+  "nhom_active": "1",
+  "id_khoa": "17"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c919"
+  },
+  "nhom_id": "DK11-KTDK&TDH1",
+  "nhom_name": "Đại học khóa 11 Kỹ thuật điều khiển và Tự động hóa 1",
+  "nhom_admin": "01006024",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c91a"
+  },
+  "nhom_id": "DK11-KTDK&TDH2",
+  "nhom_name": "Đại học khóa 11 Kỹ thuật điều khiển và Tự động hóa 2",
+  "nhom_admin": "01015013",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c91b"
+  },
+  "nhom_id": "DK11-KTDK&TDH3",
+  "nhom_name": "Đại học khóa 11 Kỹ thuật điều khiển và Tự động hóa 3",
+  "nhom_admin": "01022001",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c91c"
+  },
+  "nhom_id": "DK11-M",
+  "nhom_name": "Đại học khóa 11 May",
+  "nhom_admin": "01002011",
+  "nhom_active": "1",
+  "id_khoa": "16"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c91d"
+  },
+  "nhom_id": "DK11-NA",
+  "nhom_name": "Đại học khóa 11 Ngôn ngữ Anh",
+  "nhom_admin": "01005022",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c91e"
+  },
+  "nhom_id": "DK11-NTQ1",
+  "nhom_name": "Đại học khóa 11 Ngôn ngữ Trung 1",
+  "nhom_admin": "01005040",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c91f"
+  },
+  "nhom_id": "DK11-NTQ2",
+  "nhom_name": "Đại học khóa 11 Ngôn ngữ Trung 2",
+  "nhom_admin": "01005040",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c920"
+  },
+  "nhom_id": "DK11-NTQ3",
+  "nhom_name": "Đại học khóa 11 Ngôn ngữ Trung 3",
+  "nhom_admin": "01005045",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c921"
+  },
+  "nhom_id": "DK11-OTO1",
+  "nhom_name": "Đại học khóa 11 Ô tô 1",
+  "nhom_admin": "01001014",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c922"
+  },
+  "nhom_id": "DK11-OTO2",
+  "nhom_name": "Đại học khóa 11 Ô tô 2",
+  "nhom_admin": "01004028",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c923"
+  },
+  "nhom_id": "DK11-OTO3",
+  "nhom_name": "Đại học khóa 11 Ô tô 3",
+  "nhom_admin": "01003008",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c924"
+  },
+  "nhom_id": "DK11-OTO4",
+  "nhom_name": "Đại học khóa 11 Ô tô 4",
+  "nhom_admin": "01001003",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c925"
+  },
+  "nhom_id": "DK11-OTO5",
+  "nhom_name": "Đại học khóa 11 Ô tô 5",
+  "nhom_admin": "01001012",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c926"
+  },
+  "nhom_id": "DK11-OTO6",
+  "nhom_name": "Đại học khóa 11 Ô tô 6",
+  "nhom_admin": "01015009",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c927"
+  },
+  "nhom_id": "DK11-QTKD",
+  "nhom_name": "Đại học khóa 11 Quản trị kinh doanh",
+  "nhom_admin": "01005006",
+  "nhom_active": "1",
+  "id_khoa": "17"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c928"
+  },
+  "nhom_id": "DK11-VNH",
+  "nhom_name": "Đại học khóa 11 Việt Nam học",
+  "nhom_admin": "01005012",
+  "nhom_active": "1",
+  "id_khoa": "20"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c929"
+  },
+  "nhom_id": "DK11LT-CK1",
+  "nhom_name": "Đại học khóa 11 liên thông Cơ khí 1",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c92a"
+  },
+  "nhom_id": "DK11LT-CK2",
+  "nhom_name": "Đại học khóa 11 liên thông Cơ khí 2",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c92b"
+  },
+  "nhom_id": "DK11LT-CNTT",
+  "nhom_name": "Đại học khóa 11 liên thông Công nghệ thông tin",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "9"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c92c"
+  },
+  "nhom_id": "DK11LT-D1",
+  "nhom_name": "Đại học khóa 11 liên thông Điện 1",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c92d"
+  },
+  "nhom_id": "DK11LT-D2",
+  "nhom_name": "Đại học khóa 11 liên thông Điện 2",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c92e"
+  },
+  "nhom_id": "DK11LT-DT",
+  "nhom_name": "Đại học khóa 11 liên thông Điện tử",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c92f"
+  },
+  "nhom_id": "DK11LT-KT",
+  "nhom_name": "Đại học khóa 11 liên thông Kế toán",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "17"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c930"
+  },
+  "nhom_id": "DK11LT-OTO",
+  "nhom_name": "Đại học khóa 11 liên thông Ô tô",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c931"
+  },
+  "nhom_id": "DK12-ATTP",
+  "nhom_name": "Đại học khóa 12 An toàn thực phẩm",
+  "nhom_admin": "01003014",
+  "nhom_active": "1",
+  "id_khoa": "15"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c932"
+  },
+  "nhom_id": "DK12-CDT",
+  "nhom_name": "Đại học khóa 12 Cơ điện tử",
+  "nhom_admin": "01007012",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c933"
+  },
+  "nhom_id": "DK12-CK1",
+  "nhom_name": "Đại học khóa 12 Cơ khí 1",
+  "nhom_admin": "01004037",
+  "nhom_active": "1",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c934"
+  },
+  "nhom_id": "DK12-CK2",
+  "nhom_name": "Đại học khóa 12 Cơ khí 2",
+  "nhom_admin": "01004040",
+  "nhom_active": "1",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c935"
+  },
+  "nhom_id": "DK12-CNTT1",
+  "nhom_name": "Đại học khóa 12 Công nghệ thông tin 1",
+  "nhom_admin": "01007006",
+  "nhom_active": "1",
+  "id_khoa": "9"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c936"
+  },
+  "nhom_id": "DK12-CNTT2",
+  "nhom_name": "Đại học khóa 12 Công nghệ thông tin 2",
+  "nhom_admin": "01007003",
+  "nhom_active": "1",
+  "id_khoa": "9"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c937"
+  },
+  "nhom_id": "DK12-D1",
+  "nhom_name": "Đại học khóa 12 Điện 1",
+  "nhom_admin": "01001010",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c938"
+  },
+  "nhom_id": "DK12-D2",
+  "nhom_name": "Đại học khóa 12 Điện 2",
+  "nhom_admin": "01006049",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c939"
+  },
+  "nhom_id": "DK12-D3",
+  "nhom_name": "Đại học khóa 12 Điện 3",
+  "nhom_admin": "01006037",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c93a"
+  },
+  "nhom_id": "DK12-DT",
+  "nhom_name": "Đại học khóa 12 Điện tử",
+  "nhom_admin": "01007012",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c93b"
+  },
+  "nhom_id": "DK12-KT",
+  "nhom_name": "Đại học khóa 12 Kế toán",
+  "nhom_admin": "01010009",
+  "nhom_active": "1",
+  "id_khoa": "17"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c93c"
+  },
+  "nhom_id": "DK12-KTDK&TDH1",
+  "nhom_name": "Đại học khóa 12 Kỹ thuật điều khiển và Tự động hóa 1",
+  "nhom_admin": "01007032",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c93d"
+  },
+  "nhom_id": "DK12-KTDK&TDH2",
+  "nhom_name": "Đại học khóa 12 Kỹ thuật điều khiển và Tự động hóa 2",
+  "nhom_admin": "01010002",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c93e"
+  },
+  "nhom_id": "DK12-KTDK&TDH3",
+  "nhom_name": "Đại học khóa 12 Kỹ thuật điều khiển và Tự động hóa 3",
+  "nhom_admin": "01006021",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c93f"
+  },
+  "nhom_id": "DK12-KTDK&TDH4",
+  "nhom_name": "Đại học khóa 12 Kỹ thuật điều khiển và Tự động hóa 4",
+  "nhom_admin": "01007021",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c940"
+  },
+  "nhom_id": "DK12-M",
+  "nhom_name": "Đại học khóa 12 May",
+  "nhom_admin": "01002019",
+  "nhom_active": "1",
+  "id_khoa": "16"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c941"
+  },
+  "nhom_id": "DK12-NA",
+  "nhom_name": "Đại học khóa 12 Ngôn ngữ Anh",
+  "nhom_admin": "01005026",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c942"
+  },
+  "nhom_id": "DK12-NTQ1",
+  "nhom_name": "Đại học khóa 12 Ngôn ngữ Trung 1",
+  "nhom_admin": "01005013",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c943"
+  },
+  "nhom_id": "DK12-NTQ2",
+  "nhom_name": "Đại học khóa 12 Ngôn ngữ Trung 2",
+  "nhom_admin": "01005013",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c944"
+  },
+  "nhom_id": "DK12-NTQ3",
+  "nhom_name": "Đại học khóa 12 Ngôn ngữ Trung 3",
+  "nhom_admin": "01005045",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c945"
+  },
+  "nhom_id": "DK12-OTO1",
+  "nhom_name": "Đại học khóa 12 Ô tô 1",
+  "nhom_admin": "01001006",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c946"
+  },
+  "nhom_id": "DK12-OTO2",
+  "nhom_name": "Đại học khóa 12 Ô tô 2",
+  "nhom_admin": "01001018",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c947"
+  },
+  "nhom_id": "DK12-OTO3",
+  "nhom_name": "Đại học khóa 12 Ô tô 3",
+  "nhom_admin": "01001005",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c948"
+  },
+  "nhom_id": "DK12-OTO4",
+  "nhom_name": "Đại học khóa 12 Ô tô 4",
+  "nhom_admin": "01001011",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c949"
+  },
+  "nhom_id": "DK12-OTO5",
+  "nhom_name": "Đại học khóa 12 Ô tô 5",
+  "nhom_admin": "01015009",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c94a"
+  },
+  "nhom_id": "DK12-QTDL",
+  "nhom_name": "Đại học khóa 12 Quản trị du lịch",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c94b"
+  },
+  "nhom_id": "DK12-QTKD",
+  "nhom_name": "Đại học khóa 12 Quản trị kinh doanh",
+  "nhom_admin": "01005020",
+  "nhom_active": "1",
+  "id_khoa": "17"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c94c"
+  },
+  "nhom_id": "DK12-TP",
+  "nhom_name": "Đại học khóa 12 Thực phẩm",
+  "nhom_admin": "01003014",
+  "nhom_active": "1",
+  "id_khoa": "15"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c94d"
+  },
+  "nhom_id": "DK13-CDT",
+  "nhom_name": "Đại học khóa 13 Cơ điện tử",
+  "nhom_admin": "01005030",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c94e"
+  },
+  "nhom_id": "DK13-CK1",
+  "nhom_name": "Đại học khóa 13 Cơ khí 1",
+  "nhom_admin": "01014013",
+  "nhom_active": "1",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c94f"
+  },
+  "nhom_id": "DK13-CNTT",
+  "nhom_name": "Đại học khóa 13 CNTT",
+  "nhom_admin": "\n",
+  "nhom_active": "1",
+  "id_khoa": "9"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c950"
+  },
+  "nhom_id": "DK13-CNTT1",
+  "nhom_name": "Đại học khóa 13 Công nghệ thông tin 1",
+  "nhom_admin": "01007005",
+  "nhom_active": "1",
+  "id_khoa": "9"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c951"
+  },
+  "nhom_id": "DK13-CNTT2",
+  "nhom_name": "Đại học khóa 13 Công nghệ thông tin 2",
+  "nhom_admin": "01007033",
+  "nhom_active": "1",
+  "id_khoa": "9"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c952"
+  },
+  "nhom_id": "DK13-D1",
+  "nhom_name": "Đại học khóa 13 Điện 1",
+  "nhom_admin": "01006007",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c953"
+  },
+  "nhom_id": "DK13-D2",
+  "nhom_name": "Đại học khóa 13 Điện 2",
+  "nhom_admin": "01006011",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c954"
+  },
+  "nhom_id": "DK13-DT",
+  "nhom_name": "Đại học khóa 13 Điện tử",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c955"
+  },
+  "nhom_id": "DK13-KT",
+  "nhom_name": "Đại học khóa 13 Kế toán",
+  "nhom_admin": "01010062",
+  "nhom_active": "1",
+  "id_khoa": "17"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c956"
+  },
+  "nhom_id": "DK13-KTDK&amp;TDH1",
+  "nhom_name": "Đại học khóa 13 Kỹ thuật điều khiển và Tự động hóa 1",
+  "nhom_admin": "01006028",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c957"
+  },
+  "nhom_id": "DK13-KTDK&amp;TDH2",
+  "nhom_name": "Đại học khóa 13 Kỹ thuật điều khiển và Tự động hóa 2",
+  "nhom_admin": "01006029",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c958"
+  },
+  "nhom_id": "DK13-KTDK&amp;TDH3",
+  "nhom_name": "Đại học khóa 13 Kỹ thuật điều khiển và Tự động hóa 3",
+  "nhom_admin": "01006029",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c959"
+  },
+  "nhom_id": "DK13-KTDK&amp;TDH4",
+  "nhom_name": "Đại học khóa 13 Kỹ thuật điều khiển và Tự động hóa 4",
+  "nhom_admin": "01006028",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c95a"
+  },
+  "nhom_id": "DK13-M",
+  "nhom_name": "Đại học khóa 13 May",
+  "nhom_admin": "01002021",
+  "nhom_active": "1",
+  "id_khoa": "16"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c95b"
+  },
+  "nhom_id": "DK13-NA",
+  "nhom_name": "Đại học khóa 13 Ngôn ngữ Anh",
+  "nhom_admin": "01005007",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c95c"
+  },
+  "nhom_id": "DK13-NTQ1",
+  "nhom_name": "Đại học khóa 13 Ngôn ngữ Trung 1",
+  "nhom_admin": "01005013",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c95d"
+  },
+  "nhom_id": "DK13-NTQ2",
+  "nhom_name": "Đại học khóa 13 Ngôn ngữ Trung 2",
+  "nhom_admin": "01005038",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c95e"
+  },
+  "nhom_id": "DK13-NTQ3",
+  "nhom_name": "Đại học khóa 13 Ngôn ngữ Trung 3",
+  "nhom_admin": "01005021",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c95f"
+  },
+  "nhom_id": "DK13-OTO1",
+  "nhom_name": "Đại học khóa 13 Ô tô 1",
+  "nhom_admin": "01001004",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c960"
+  },
+  "nhom_id": "DK13-OTO2",
+  "nhom_name": "Đại học khóa 13 Ô tô 2",
+  "nhom_admin": "01008021",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c961"
+  },
+  "nhom_id": "DK13-OTO3",
+  "nhom_name": "Đại học khóa 13 Ô tô 3",
+  "nhom_admin": "01010033",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c962"
+  },
+  "nhom_id": "DK13-OTO4",
+  "nhom_name": "Đại học khóa 13 Ô tô 4",
+  "nhom_admin": "01011002",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c963"
+  },
+  "nhom_id": "DK13-OTO5",
+  "nhom_name": "Đại học khóa 13 Ô tô 5",
+  "nhom_admin": "01008023",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c964"
+  },
+  "nhom_id": "DK13-QTDL",
+  "nhom_name": "Đại học khóa 13 Quản trị du lịch",
+  "nhom_admin": "01005017",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c965"
+  },
+  "nhom_id": "DK13-QTKD",
+  "nhom_name": "Đại học khóa 13 Quản trị kinh doanh",
+  "nhom_admin": "01010057",
+  "nhom_active": "1",
+  "id_khoa": "17"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c966"
+  },
+  "nhom_id": "DK13-TP",
+  "nhom_name": "Đại học khóa 13 Thực phẩm",
+  "nhom_admin": "01003004",
+  "nhom_active": "1",
+  "id_khoa": "15"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c967"
+  },
+  "nhom_id": "DK14-CDT",
+  "nhom_name": "Đại học khóa 14 Cơ điện tử",
+  "nhom_admin": "01004037",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c968"
+  },
+  "nhom_id": "DK14-CK",
+  "nhom_name": "Đại học khóa 14 Cơ khí",
+  "nhom_admin": "01004036",
+  "nhom_active": "1",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c969"
+  },
+  "nhom_id": "DK14-CNTT1",
+  "nhom_name": "Đại học khóa 14 Công nghệ thông tin 1",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "9"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c96a"
+  },
+  "nhom_id": "DK14-CNTT2",
+  "nhom_name": "Đại học khóa 14 Công nghệ thông tin 2",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "9"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c96b"
+  },
+  "nhom_id": "DK14-D1",
+  "nhom_name": "Đại học khóa 14 Điện 1",
+  "nhom_admin": "01006038",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c96c"
+  },
+  "nhom_id": "DK14-D2",
+  "nhom_name": "Đại học khóa 14 Điện 2",
+  "nhom_admin": "01007028",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c96d"
+  },
+  "nhom_id": "DK14-D3",
+  "nhom_name": "Đại học khóa 14 Điện 3",
+  "nhom_admin": "01007013",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c96e"
+  },
+  "nhom_id": "DK14-KT",
+  "nhom_name": "Đại học khóa 14 Kế toán",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c96f"
+  },
+  "nhom_id": "DK14-KTDK.TDH1",
+  "nhom_name": "Đại học khóa 14 Kỹ thuật điều khiển và Tự động hóa 1",
+  "nhom_admin": "01006038",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c970"
+  },
+  "nhom_id": "DK14-KTDK.TDH2",
+  "nhom_name": "Đại học khóa 14 Kỹ thuật điều khiển và Tự động hóa 2",
+  "nhom_admin": "01006040",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c971"
+  },
+  "nhom_id": "DK14-KTDK.TDH3",
+  "nhom_name": "Đại học khóa 14 Kỹ thuật điều khiển và Tự động hóa 3",
+  "nhom_admin": "01007025",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c972"
+  },
+  "nhom_id": "DK14-KTDK.TDH4",
+  "nhom_name": "Đại học khóa 14 Kỹ thuật điều khiển và Tự động hóa 4",
+  "nhom_admin": "01006026",
+  "nhom_active": "1",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c973"
+  },
+  "nhom_id": "DK14-M",
+  "nhom_name": "Đại học khóa 14 May",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "16"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c974"
+  },
+  "nhom_id": "DK14-NTQ1",
+  "nhom_name": "Đại học khóa 14 Ngôn ngữ Trung 1",
+  "nhom_admin": "01005013",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c975"
+  },
+  "nhom_id": "DK14-NTQ2",
+  "nhom_name": "Đại học khóa 14 Ngôn ngữ Trung 2",
+  "nhom_admin": "01005040",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c976"
+  },
+  "nhom_id": "DK14-NTQ3",
+  "nhom_name": "Đại học khóa 14 Ngôn ngữ Trung 3",
+  "nhom_admin": "01005045",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c977"
+  },
+  "nhom_id": "DK14-OTO1",
+  "nhom_name": "Đại học khóa 14 Ô tô 1",
+  "nhom_admin": "01001011",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c978"
+  },
+  "nhom_id": "DK14-OTO2",
+  "nhom_name": "Đại học khóa 14 Ô tô 2",
+  "nhom_admin": "01004028",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c979"
+  },
+  "nhom_id": "DK14-OTO3",
+  "nhom_name": "Đại học khóa 14 Ô tô 3",
+  "nhom_admin": "01001014",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c97a"
+  },
+  "nhom_id": "DK14-OTO4",
+  "nhom_name": "Đại học khóa 14 Ô tô 4",
+  "nhom_admin": "01011012",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c97b"
+  },
+  "nhom_id": "DK14-OTO5",
+  "nhom_name": "Đại học khóa 14 Ô tô 5",
+  "nhom_admin": "01011004",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c97c"
+  },
+  "nhom_id": "DK14-OTO6",
+  "nhom_name": "Đại học khóa 14 Ô tô 6",
+  "nhom_admin": "01005005",
+  "nhom_active": "1",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c97d"
+  },
+  "nhom_id": "DK14-QTDL",
+  "nhom_name": "Đại học khóa 14 Quản trị du lịch",
+  "nhom_admin": "01005012",
+  "nhom_active": "1",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c97e"
+  },
+  "nhom_id": "DK14-QTKD",
+  "nhom_name": "Đại học khóa 14 Quản trị kinh doanh",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "17"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c97f"
+  },
+  "nhom_id": "DK14-TP",
+  "nhom_name": "Đại học khóa 14 Thực phẩm",
+  "nhom_admin": null,
+  "nhom_active": "1",
+  "id_khoa": "15"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c980"
+  },
+  "nhom_id": "DK9-CK1",
+  "nhom_name": "Đại học khóa 9 Cơ khí 1",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c981"
+  },
+  "nhom_id": "DK9-CK2",
+  "nhom_name": "Đại học khóa 9 Cơ khí 2",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "11"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c982"
+  },
+  "nhom_id": "DK9-CNTT",
+  "nhom_name": "Đại học khóa 9 Công nghệ thông tin",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "9"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c983"
+  },
+  "nhom_id": "DK9-D1",
+  "nhom_name": "Đại học khóa 9 Điện 1",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c984"
+  },
+  "nhom_id": "DK9-D2",
+  "nhom_name": "Đại học khóa 9 Điện 2",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c985"
+  },
+  "nhom_id": "DK9-DT",
+  "nhom_name": "Đại học khóa 9 Điện tử",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c986"
+  },
+  "nhom_id": "DK9-KT",
+  "nhom_name": "Đại học khóa 9 Kế toán",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "17"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c987"
+  },
+  "nhom_id": "DK9-KTDK&TDH",
+  "nhom_name": "Đại học khóa 9 Kỹ thuật điều khiển và Tự động hóa",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "12"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c988"
+  },
+  "nhom_id": "DK9-M",
+  "nhom_name": "Đại học khóa 9 May",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "16"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c989"
+  },
+  "nhom_id": "DK9-NTQ1",
+  "nhom_name": "Đại học khóa 9 Ngôn ngữ Trung 1",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c98a"
+  },
+  "nhom_id": "DK9-NTQ2",
+  "nhom_name": "Đại học khóa 9 Ngôn ngữ Trung 2",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "18"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c98b"
+  },
+  "nhom_id": "DK9-OTO1",
+  "nhom_name": "Đại học khóa 9 Ô tô 1",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c98c"
+  },
+  "nhom_id": "DK9-OTO2",
+  "nhom_name": "Đại học khóa 9 Ô tô 2",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c98d"
+  },
+  "nhom_id": "DK9-OTO3",
+  "nhom_name": "Đại học khóa 9 Ô tô 3",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "14"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c98e"
+  },
+  "nhom_id": "DK9-QTKD",
+  "nhom_name": "Đại học khóa 9 Quản trị kinh doanh",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "17"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c98f"
+  },
+  "nhom_id": "DK9-VNH",
+  "nhom_name": "Đại học khóa 9 Việt Nam học",
+  "nhom_admin": null,
+  "nhom_active": "0",
+  "id_khoa": "20"
+},
+{
+  "_id": {
+    "$oid": "6625c32d00b545ea5fc9c990"
+  },
+  "nhom_id": "GVCN",
+  "nhom_name": "Giảng viên chủ nhiệm",
+  "nhom_admin": null,
+  "nhom_active": "1"
+}]
