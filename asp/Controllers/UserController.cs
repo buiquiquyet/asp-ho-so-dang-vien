@@ -9,6 +9,8 @@ using MongoDB.Bson;
 using asp.Services;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace asp.Controllers 
 {
@@ -56,7 +58,7 @@ namespace asp.Controllers
             }
         }
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetUser(string id)
+        public async Task<IActionResult> GetUserById(string id)
         {
             if (!IsValidObjectId(id))
             {
@@ -119,36 +121,25 @@ namespace asp.Controllers
                 return Ok(new { errorMessage = "Tên đăng nhập hoặc mật khẩu không chính xác. Xin vui lòng thử lại." });
             }
             var token = _jwtService.GenerateToken(user.Id);
-            return Ok(new { token });
-            return Ok(new {message = "Đăng nhập thành công"});
+            return Ok(new { token, role = user.nhom_id });
+            
         }
         [HttpGet("validate")]
-        public IActionResult ValidateToken(string token)
+        public async Task<IActionResult> ValidateToken(string token)
         {
             if (string.IsNullOrEmpty(token))
             {
-                return BadRequest("Token is required.");
+                return Ok(new { error="error"});
             }
 
             var userId = _jwtService.DecodeToken(token);
             if (string.IsNullOrEmpty(userId))
             {
-                return BadRequest("Invalid token.");
+                return Ok(new { error = "error" });
             }
+            var dataUser = await _resp.GetByIdAsync(userId);
 
-
-            return Ok(new { userId });
-        }
-
-        private TokenValidationParameters GetValidationParameters()
-        {
-            return new TokenValidationParameters
-            {
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("hosodangvien-roleuser-authentizationToken")),
-                ValidateIssuer = false,
-                ValidateAudience = false
-            };
+            return Ok(new { userId, dataUser }) ;
         }
         [HttpPost]
         public async Task<IActionResult> CreateAsync([FromBody] Users newEntity)

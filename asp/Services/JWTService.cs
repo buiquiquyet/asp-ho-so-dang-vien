@@ -1,4 +1,5 @@
 ﻿using asp.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -30,7 +31,7 @@ namespace asp.Services
                     new Claim("ID", userId)
 
                 }),
-                Expires = DateTime.UtcNow.AddDays(7),
+                Expires = DateTime.UtcNow.AddSeconds(20),
                 Issuer = _issuer,
                 Audience = _audience,
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
@@ -48,19 +49,35 @@ namespace asp.Services
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = new SymmetricSecurityKey(key),
                 ValidateIssuer = false,
-                ValidateAudience = false
+                ValidateAudience = false,
+                ValidateLifetime = true 
             };
 
-            SecurityToken validatedToken;
-            var principal = tokenHandler.ValidateToken(token, validationParameters, out validatedToken);
+            try
+            {
+                SecurityToken validatedToken;
+                var claimsPrincipal = tokenHandler.ValidateToken(token, validationParameters, out validatedToken);
 
-            var jwtToken = tokenHandler.ReadJwtToken(token);
+                var jwtToken = (JwtSecurityToken)validatedToken;
 
-            var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "ID");
-            var userId = userIdClaim?.Value;
+                if (jwtToken.ValidTo < DateTime.UtcNow)
+                {
+                    return "";
+                }
 
-            return userId;
+                var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "ID");
+                var userId = userIdClaim?.Value;
+
+                return userId;
+            }
+            catch (Exception ex)
+            {
+                // Xử lý các ngoại lệ nếu cần
+                return "";
+            }
         }
+
+
 
     }
 }
