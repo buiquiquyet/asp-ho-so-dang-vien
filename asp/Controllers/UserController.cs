@@ -30,7 +30,7 @@ namespace asp.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllUsers(int page , int size )
+        public async Task<IActionResult> GetAllUsers(int page = 1 , int size = 10 )
         {
             var skipAmount = (page - 1) * size;
             List<Users> datas;
