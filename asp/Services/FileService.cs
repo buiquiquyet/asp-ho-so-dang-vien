@@ -3,6 +3,7 @@ using asp.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
 using System.Text.RegularExpressions;
@@ -28,7 +29,7 @@ namespace asp.Respositories
         }
         public async Task<List<Files>> GetByRecordIdAsync(string idRecord)
         {
-            var filter = Builders<Files>.Filter.Eq("record_id", idRecord);
+            var filter = Builders<Files>.Filter.Eq("profile_id", idRecord);
             return await _collection.Find(filter).ToListAsync();
         }
         public async Task<Files?> GetByIdAsync(string id) =>
@@ -46,7 +47,7 @@ namespace asp.Respositories
 
                         var fileToAdd = new Files
                         {
-                            record_id = newEntities.record_id,
+                            profile_id = newEntities.profile_id,
                             ten = fileName
                         };
                         await _collection.InsertOneAsync(fileToAdd);
@@ -72,11 +73,34 @@ namespace asp.Respositories
         }
         public async Task<long> DeleteByIdsAsync(List<string> ids)
         {
+            var existingFiles = await _collection.Find(u => ids.Any(id => id == u.Id)).ToListAsync();
+            if ( existingFiles.Count == 0)
+            {   
+                return 0;
+            }
+            foreach(var file in existingFiles)
+            {
+                DeleteProjectFile(file);
+            }
             var filter = Builders<Files>.Filter.In("_id", ids.Select(ObjectId.Parse));
             var result = await _collection.DeleteManyAsync(filter);
             return result.DeletedCount;
         }
-
+        public async Task<long> DeleteByProfileIdsAsync(List<string> profileIds)
+        {
+            var existingFiles = await _collection.Find(u => profileIds.Any(id => id == u.profile_id)).ToListAsync();
+            if (existingFiles.Count == 0)
+            {
+                return 0;
+            }
+            foreach (var file in existingFiles)
+            {
+                DeleteProjectFile(file);
+            }
+            var filter = Builders<Files>.Filter.In("profile_id", profileIds);
+            var result = await _collection.DeleteManyAsync(filter);
+            return result.DeletedCount;
+        }
         private async Task<string> SaveFileAsync(IFormFile file)
         {
             // Mã lưu file giữ nguyên không đổi

@@ -82,7 +82,7 @@ namespace asp.Controllers
             }
 
 
-        [HttpPut("{id}")]
+            [HttpPut("{id}")]
             public async Task<IActionResult> UpdateFile(string id, [FromBody] Files updatedRecord)
             {
 
@@ -124,5 +124,19 @@ namespace asp.Controllers
                     return StatusCode(500, ex.Message);
                 }
             }
+        [HttpDelete("profile/deleteByIds")]
+        public async Task<IActionResult> DeleteFileByProfileIds(List<string> profileIds)
+        {
+            try
+            {
+                var deletedCount = await _resp.DeleteByProfileIdsAsync(profileIds);
+                var response = new { message = $"Xóa thành công {deletedCount} file" };
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
+    }
 }
