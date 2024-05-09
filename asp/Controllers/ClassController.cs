@@ -62,9 +62,9 @@ namespace asp.Controllers
             return Ok(response);
         }
         [HttpGet("user/{tendangnhapUser}")]
-        public async Task<IActionResult> GetClassByIdKhoa(string tdnUser)
+        public async Task<IActionResult> GetClassByIdKhoa(string tendangnhapUser)
         {
-            var classes = await _resp.GetByUserAsync(tdnUser);
+            var classes = await _resp.GetByUserAsync(tendangnhapUser);
             if (classes == null)
             {
                 return NotFound();

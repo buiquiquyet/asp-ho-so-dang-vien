@@ -3,26 +3,24 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Driver;
-using System.Collections.Generic;
-
 namespace asp.Respositories
 {
 
 
-    public class RecordService
+    public class InstructorService
     {
-        private readonly IMongoCollection<Records> _collection;
+        private readonly IMongoCollection<Instructor> _collection;
 
-        public RecordService(IOptions<MongoDbSetting> databaseSettings)
+        public InstructorService(IOptions<MongoDbSetting> databaseSettings)
         {
             var client = new MongoClient(databaseSettings.Value.ConnectionURI);
             var database = client.GetDatabase(databaseSettings.Value.DatabaseName);
-            _collection = database.GetCollection<Records>(typeof(Records).Name.ToLower());
+            _collection = database.GetCollection<Instructor>(typeof(Instructor).Name.ToLower());
         }
 
-        public async Task<List<Records>> GetAllAsync(int skipAmount, int pageSize)
+        public async Task<List<Instructor>> GetAllAsync(int skipAmount, int pageSize)
         {
-            var sortDefinition = Builders<Records>.Sort.Descending(x => x.Id);
+            var sortDefinition = Builders<Instructor>.Sort.Descending(x => x.Id);
 
             return await _collection.Find(_ => true)
                                     .Skip(skipAmount)
@@ -34,26 +32,14 @@ namespace asp.Respositories
         {
             return await _collection.CountDocumentsAsync(_ => true);
         }
-        public async Task<Records?> GetByIdAsync(string id) =>
-            await _collection.Find(Builders<Records>.Filter.Eq("_id", ObjectId.Parse(id))).FirstOrDefaultAsync();
+        public async Task<Instructor?> GetByIdAsync(string id) =>
+            await _collection.Find(Builders<Instructor>.Filter.Eq("_id", ObjectId.Parse(id))).FirstOrDefaultAsync();
         /* public async Task<Records?> GetByIdRecordstAsync(string idRecord) =>
              await _collection.Find(Builders<Records>.Filter.Eq("id_khoa", idRecord)).FirstOrDefaultAsync();*/
-        public async Task<List<Records>> GetByUserIdAsync(string userId, int skipAmount, int pageSize)
+        public async Task<List<Instructor>> GetByUserIdAsync(string userId, int skipAmount, int pageSize)
         {
-            var filter = Builders<Records>.Filter.Eq("user_id", userId);
-            var sortDefinition = Builders<Records>.Sort.Descending(x => x.Id);
-
-            return await _collection.Find(filter)
-                                    .Skip(skipAmount)
-                                    .Sort(sortDefinition)
-                                    .Limit(pageSize)
-                                    .ToListAsync();
-           
-        }
-        public async Task<List<Records>> GetByDepartmentIdAsync(string departmentId, int skipAmount, int pageSize)
-        {
-            var filter = Builders<Records>.Filter.Eq("id_khoa", departmentId);
-            var sortDefinition = Builders<Records>.Sort.Descending(x => x.Id);
+            var filter = Builders<Instructor>.Filter.Eq("user_id", userId);
+            var sortDefinition = Builders<Instructor>.Sort.Descending(x => x.Id);
 
             return await _collection.Find(filter)
                                     .Skip(skipAmount)
@@ -62,36 +48,39 @@ namespace asp.Respositories
                                     .ToListAsync();
 
         }
-        public async Task<String> CreateAsync(Records newEntity)
+        public async Task<List<Instructor>> GetByDepartmentIdAsync(string departmentId, int skipAmount, int pageSize)
         {
-            newEntity.check = "0";
+            var filter = Builders<Instructor>.Filter.Eq("id_khoa", departmentId);
+            var sortDefinition = Builders<Instructor>.Sort.Descending(x => x.Id);
+
+            return await _collection.Find(filter)
+                                    .Skip(skipAmount)
+                                    .Sort(sortDefinition)
+                                    .Limit(pageSize)
+                                    .ToListAsync();
+
+        }
+        public async Task<String> CreateAsync(Instructor newEntity)
+        {
             await _collection.InsertOneAsync(newEntity);
 
             return newEntity.Id;
         }
 
-        public async Task UpdateAsync(string id, Records updatedEntity)
+        public async Task UpdateAsync(string id, Instructor updatedEntity)
         {
-            var filter = Builders<Records>.Filter.Eq("_id", ObjectId.Parse(id));
+            var filter = Builders<Instructor>.Filter.Eq("_id", ObjectId.Parse(id));
             await _collection.ReplaceOneAsync(filter, updatedEntity);
         }
-        public async Task<long> UpdateCheckAsync(List<string> ids, string valueCheck)
-        {
-            var filter = Builders<Records>.Filter.In("_id", ids.Select(ObjectId.Parse));
 
-            var update = Builders<Records>.Update.Set("check", valueCheck);
-
-            var rs = await _collection.UpdateManyAsync(filter, update);
-            return rs.ModifiedCount;
-        }
         public async Task RemoveAsync(string id)
         {
-            var filter = Builders<Records>.Filter.Eq("_id", ObjectId.Parse(id));
+            var filter = Builders<Instructor>.Filter.Eq("_id", ObjectId.Parse(id));
             await _collection.DeleteOneAsync(filter);
         }
         public async Task<long> DeleteByIdsAsync(List<string> ids)
         {
-            var filter = Builders<Records>.Filter.In("_id", ids.Select(ObjectId.Parse));
+            var filter = Builders<Instructor>.Filter.In("_id", ids.Select(ObjectId.Parse));
             var result = await _collection.DeleteManyAsync(filter);
             return result.DeletedCount;
         }

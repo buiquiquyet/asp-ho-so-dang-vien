@@ -15,21 +15,21 @@ using System.Data;
 namespace asp.Controllers
 {
     [ApiController]
-    [Route("api/record")]
-    public class RecordController : Controller
+    [Route("api/instructor")]
+    public class InstructorController : Controller
     {
-        private readonly RecordService _resp;
+        private readonly InstructorService _resp;
 
-        public RecordController(RecordService resp)
+        public InstructorController(InstructorService resp)
         {
             _resp = resp;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllRecords(int page = 1, int size = 10)
+        public async Task<IActionResult> GetAllInstructors(int page = 1, int size = 10)
         {
             var skipAmount = (page - 1) * size;
-            List<Records> datas;
+            List<Instructor> datas;
             long totalRecords;
             datas = await _resp.GetAllAsync(skipAmount, size);
             totalRecords = await _resp.CountAsync();
@@ -54,7 +54,7 @@ namespace asp.Controllers
             }
         }
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetRecordById(string id)
+        public async Task<IActionResult> GetIntstructorById(string id)
         {
             if (!IsValidObjectId(id))
             {
@@ -81,9 +81,9 @@ namespace asp.Controllers
         public async Task<IActionResult> GetRecordByUserId(string userId, int page = 1, int size = 10)
         {
             var skipAmount = (page - 1) * size;
-            List<Records> datas;
+            List<Instructor> datas;
             long totalRecords;
-            datas = await _resp.GetByUserIdAsync(userId,skipAmount, size);
+            datas = await _resp.GetByUserIdAsync(userId, skipAmount, size);
             totalRecords = await _resp.CountAsync();
 
             if (datas != null && datas.Count > 0)
@@ -109,7 +109,7 @@ namespace asp.Controllers
         public async Task<IActionResult> GetRecordByDepartmentId(string departmentId, int page = 1, int size = 10)
         {
             var skipAmount = (page - 1) * size;
-            List<Records> datas;
+            List<Instructor> datas;
             long totalRecords;
             datas = await _resp.GetByDepartmentIdAsync(departmentId, skipAmount, size);
 
@@ -121,7 +121,7 @@ namespace asp.Controllers
                     datas,
                     totalPages = (int)Math.Ceiling((double)datas.Count / size),
                     currentPage = page,
-                    totalRecords = datas.Count
+                    totalRecords=datas.Count
                 };
 
                 return Ok(response);
@@ -133,7 +133,7 @@ namespace asp.Controllers
             }
         }
         [HttpPost]
-        public async Task<IActionResult> CreateAsync([FromBody] Records newEntity)
+        public async Task<IActionResult> CreateAsync([FromBody] Instructor newEntity)
         {
             if (newEntity == null)
             {
@@ -152,12 +152,12 @@ namespace asp.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateRecord(string id, [FromBody] Records updatedRecord)
+        public async Task<IActionResult> UpdateIntstructor(string id, [FromBody] Instructor updatedIntstructor)
         {
 
             try
             {
-                await _resp.UpdateAsync(id, updatedRecord);
+                await _resp.UpdateAsync(id, updatedIntstructor);
                 return Ok(new { message = "Cập nhật hồ sơ thành công." });
             }
             catch (Exception ex)
@@ -165,21 +165,9 @@ namespace asp.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
-        [HttpPut("updateChecks")]
-        public async Task<IActionResult> UpdateCheckRecords(List<string> ids, string updateChecks)
-        {
-            try
-            {
-                var count = await _resp.UpdateCheckAsync(ids, updateChecks);
-                return Ok(new { message = $"Duyệt thành công {count}  hồ sơ." });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Internal server error: {ex.Message}");
-            }
-        }
+
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteRecord(string id)
+        public async Task<IActionResult> DeleteIntstructor(string id)
         {
             try
             {
@@ -192,7 +180,7 @@ namespace asp.Controllers
             }
         }
         [HttpDelete("deleteByIds")]
-        public async Task<IActionResult> DeleteRecords(List<string> ids)
+        public async Task<IActionResult> DeleteIntstructors(List<string> ids)
         {
             try
             {
