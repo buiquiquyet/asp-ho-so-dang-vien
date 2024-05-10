@@ -3,7 +3,7 @@ using MongoDB.Bson;
 
 namespace asp.Models
 {
-    public class Instructor
+    public class Instructors
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
@@ -13,11 +13,11 @@ namespace asp.Models
 
         public string? ten_gv { get; set; }
         public string? lop { get; set; }
-        public string? ten_hoc_phan { get; set; }
         public string? ky_id { get; set; }
+       /* public string? ten_hoc_phan { get; set; }
         public string? ngay_bat_dau { get; set; }
         public string? ngay_ket_thuc { get; set; }
-        public string? ghichu { get; set; }
+        public string? ghichu { get; set; }*/
       
 
 

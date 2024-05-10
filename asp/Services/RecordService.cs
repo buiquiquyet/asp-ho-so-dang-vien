@@ -75,6 +75,12 @@ namespace asp.Respositories
             var filter = Builders<Records>.Filter.Eq("_id", ObjectId.Parse(id));
             await _collection.ReplaceOneAsync(filter, updatedEntity);
         }
+        public async Task UpdateNoteAsync(string id, string note)
+        {
+            var filter = Builders<Records>.Filter.Eq("_id", ObjectId.Parse(id));
+            var update = Builders<Records>.Update.Set("ghichu", note);
+            await _collection.UpdateOneAsync(filter, update);
+        }
         public async Task<long> UpdateCheckAsync(List<string> ids, string valueCheck)
         {
             var filter = Builders<Records>.Filter.In("_id", ids.Select(ObjectId.Parse));

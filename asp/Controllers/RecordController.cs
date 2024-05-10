@@ -165,6 +165,20 @@ namespace asp.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+        [HttpPut("note/{id}")]
+        public async Task<IActionResult> UpdateNoteRecord(string id,[FromBody] string note)
+        {
+
+            try
+            {
+                await _resp.UpdateNoteAsync(id, note);
+                return Ok(new { message = "Cập nhật ghi chú hồ sơ thành công." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
         [HttpPut("updateChecks")]
         public async Task<IActionResult> UpdateCheckRecords(List<string> ids, string updateChecks)
         {

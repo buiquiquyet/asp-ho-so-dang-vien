@@ -29,7 +29,7 @@ namespace asp.Controllers
         public async Task<IActionResult> GetAllInstructors(int page = 1, int size = 10)
         {
             var skipAmount = (page - 1) * size;
-            List<Instructor> datas;
+            List<Instructors> datas;
             long totalRecords;
             datas = await _resp.GetAllAsync(skipAmount, size);
             totalRecords = await _resp.CountAsync();
@@ -81,7 +81,7 @@ namespace asp.Controllers
         public async Task<IActionResult> GetRecordByUserId(string userId, int page = 1, int size = 10)
         {
             var skipAmount = (page - 1) * size;
-            List<Instructor> datas;
+            List<Instructors> datas;
             long totalRecords;
             datas = await _resp.GetByUserIdAsync(userId, skipAmount, size);
             totalRecords = await _resp.CountAsync();
@@ -109,7 +109,7 @@ namespace asp.Controllers
         public async Task<IActionResult> GetRecordByDepartmentId(string departmentId, int page = 1, int size = 10)
         {
             var skipAmount = (page - 1) * size;
-            List<Instructor> datas;
+            List<Instructors> datas;
             long totalRecords;
             datas = await _resp.GetByDepartmentIdAsync(departmentId, skipAmount, size);
 
@@ -133,7 +133,7 @@ namespace asp.Controllers
             }
         }
         [HttpPost]
-        public async Task<IActionResult> CreateAsync([FromBody] Instructor newEntity)
+        public async Task<IActionResult> CreateAsync([FromBody] Instructors newEntity)
         {
             if (newEntity == null)
             {
@@ -152,7 +152,7 @@ namespace asp.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateIntstructor(string id, [FromBody] Instructor updatedIntstructor)
+        public async Task<IActionResult> UpdateIntstructor(string id, [FromBody] Instructors updatedIntstructor)
         {
 
             try
