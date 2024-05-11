@@ -105,13 +105,13 @@ namespace asp.Controllers
                 return Json(errorObject);
             }
         }
-        [HttpGet("department/{departmentId}")]
-        public async Task<IActionResult> GetRecordByDepartmentId(string departmentId, int page = 1, int size = 10)
+        [HttpGet("tbt/{departmentId}/{userId}")]
+        public async Task<IActionResult> GetRecordByDepartmentId(string departmentId, string userId, int page = 1, int size = 10)
         {
             var skipAmount = (page - 1) * size;
             List<Records> datas;
             long totalRecords;
-            datas = await _resp.GetByDepartmentIdAsync(departmentId, skipAmount, size);
+            datas = await _resp.GetByDepartmentIdAsync(departmentId, userId, skipAmount, size);
 
             if (datas != null && datas.Count > 0)
             {

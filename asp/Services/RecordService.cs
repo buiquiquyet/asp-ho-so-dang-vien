@@ -50,9 +50,12 @@ namespace asp.Respositories
                                     .ToListAsync();
            
         }
-        public async Task<List<Records>> GetByDepartmentIdAsync(string departmentId, int skipAmount, int pageSize)
+        public async Task<List<Records>> GetByDepartmentIdAsync(string departmentId,string userId, int skipAmount, int pageSize)
         {
-            var filter = Builders<Records>.Filter.Eq("id_khoa", departmentId);
+            var filter = Builders<Records>.Filter.And(
+                        Builders<Records>.Filter.Eq("id_khoa", departmentId),
+                        Builders<Records>.Filter.Eq("user_id", userId)
+                    );
             var sortDefinition = Builders<Records>.Sort.Descending(x => x.Id);
 
             return await _collection.Find(filter)

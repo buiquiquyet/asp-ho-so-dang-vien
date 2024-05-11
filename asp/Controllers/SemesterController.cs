@@ -20,9 +20,6 @@ namespace asp.Controllers
     {
         private readonly SemesterService _resp;
 
-        private readonly JWTService _jwtService;
-
-
         public SemesterController(SemesterService resp)
         {
             _resp = resp;
