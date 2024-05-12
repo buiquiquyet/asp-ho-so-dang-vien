@@ -68,15 +68,10 @@ namespace asp.Controllers
         {
             return ObjectId.TryParse(id, out _);
         }
-        [HttpGet("user/{userId}")]
-        public async Task<IActionResult> GetSubjectByUserId(string userId)
+        [HttpGet("user/{user_tdn}")]
+        public async Task<IActionResult> GetSubjectByUserId(string user_tdn)
         {
-            if (!IsValidObjectId(userId))
-            {
-                return BadRequest("Invalid ObjectId format.");
-            }
-
-            var record = await _resp.GetByUserIdAsync(userId);
+            var record = await _resp.GetByUserIdAsync(user_tdn);
             if (record == null)
             {
                 return NotFound();
@@ -91,11 +86,6 @@ namespace asp.Controllers
         [HttpGet("department/{departmentId}")]
         public async Task<IActionResult> GetSubjectByDepartmentId(string departmentId)
         {
-            if (!IsValidObjectId(departmentId))
-            {
-                return BadRequest("Invalid ObjectId format.");
-            }
-
             var record = await _resp.GetByDepartmentIdAsync(departmentId);
             if (record == null)
             {
