@@ -68,10 +68,10 @@ namespace asp.Controllers
         {
             return ObjectId.TryParse(id, out _);
         }
-        [HttpGet("user/{user_tdn}")]
-        public async Task<IActionResult> GetSubjectByUserId(string user_tdn)
+        [HttpGet("user/{userTdn}")]
+        public async Task<IActionResult> GetSubjectByUserId(string userTdn)
         {
-            var record = await _resp.GetByUserIdAsync(user_tdn);
+            var record = await _resp.GetByUserIdAsync(userTdn);
             if (record == null)
             {
                 return NotFound();
