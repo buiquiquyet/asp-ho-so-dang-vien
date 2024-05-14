@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "663da2892e7516ed12b33673"
+  },
+  "user_id": "6623cc682ba3844cdf413921",
+  "id_khoa": "14",
+  "ten_gv": "Vũ Thành Trung",
+  "lop": "DK11-OTO4",
+  "ky_id": "6638d71cc5674dd369c4e7a6"
+},
+{
+  "_id": {
+    "$oid": "663da29e2e7516ed12b33674"
+  },
+  "user_id": "6623cc682ba3844cdf41396a",
+  "id_khoa": "9",
+  "ten_gv": "Vũ Bảo  Tạo",
+  "lop": "DK11-CNTT1",
+  "ky_id": "6638d729c5674dd369c4e7a7"
+},
+{
+  "_id": {
+    "$oid": "663da3aa2e7516ed12b33677"
+  },
+  "user_id": "6623cc682ba3844cdf413921",
+  "id_khoa": "14",
+  "ten_gv": "Vũ Thành Trung",
+  "lop": "DK11-OTO4",
+  "ky_id": "6638d729c5674dd369c4e7a7"
+},
+{
+  "_id": {
+    "$oid": "663da3b02e7516ed12b33678"
+  },
+  "user_id": "6623cc682ba3844cdf413921",
+  "id_khoa": "14",
+  "ten_gv": "Vũ Thành Trung",
+  "lop": "DK11-OTO4",
+  "ky_id": "6638d736c5674dd369c4e7a9"
+}]

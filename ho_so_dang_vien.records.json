@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "663f8df9cf0b6755c9135706"
+  },
+  "user_id": "6623cc682ba3844cdf41396a",
+  "id_khoa": "9",
+  "ten_gv": "Vũ Bảo  Tạo",
+  "lop": "DK11-CNTT1",
+  "ten_hoc_phan": "reactjs",
+  "ky_id": "6638d70ac5674dd369c4e7a4",
+  "bo_mon_id": "663f6edeaf0f8106e3551dbf",
+  "ngay_bat_dau": "2024-05-07",
+  "ngay_ket_thuc": "2024-05-24",
+  "ghichu": null,
+  "check": "1"
+},
+{
+  "_id": {
+    "$oid": "663f8f64cf0b6755c9135708"
+  },
+  "user_id": "6623cc682ba3844cdf41396a",
+  "id_khoa": "9",
+  "ten_gv": "Vũ Bảo  Tạo",
+  "lop": "DK11-CNTT1",
+  "ten_hoc_phan": "quan tri mang",
+  "ky_id": "6638d70ac5674dd369c4e7a4",
+  "bo_mon_id": "663f6edeaf0f8106e3551dbf",
+  "ngay_bat_dau": "2024-05-08",
+  "ngay_ket_thuc": "2024-05-24",
+  "ghichu": null,
+  "check": "2"
+},
+{
+  "_id": {
+    "$oid": "6640d6def64815b6e0e2d1c2"
+  },
+  "user_id": "6623cc682ba3844cdf41396c",
+  "id_khoa": "9",
+  "ten_gv": "Hoàng Thị  Ngát",
+  "lop": "DK11-CNTT2",
+  "ten_hoc_phan": "mang",
+  "ky_id": null,
+  "bo_mon_id": "663f6edeaf0f8106e3551dbf",
+  "ngay_bat_dau": "2024-05-07",
+  "ngay_ket_thuc": "2024-05-30",
+  "ghichu": null,
+  "check": "0"
+},
+{
+  "_id": {
+    "$oid": "664222a88037d13b637096a1"
+  },
+  "user_id": "6623cc682ba3844cdf41396a",
+  "id_khoa": "9",
+  "ten_gv": "Vũ Bảo  Tạo",
+  "lop": "DK11-CNTT1",
+  "ten_hoc_phan": "c#",
+  "ky_id": "6638d6cac5674dd369c4e7a3",
+  "bo_mon_id": "663f6edeaf0f8106e3551dbf",
+  "ngay_bat_dau": "2024-05-07",
+  "ngay_ket_thuc": "2024-05-15",
+  "ghichu": "ghi chú\n",
+  "check": "0"
+},
+{
+  "_id": {
+    "$oid": "66422a89d319decac9dc61da"
+  },
+  "user_id": "6623cc682ba3844cdf413921",
+  "id_khoa": "14",
+  "ten_gv": "Vũ Thành Trung",
+  "lop": "DK11-OTO4",
+  "ten_hoc_phan": "oto",
+  "ky_id": "6638d6cac5674dd369c4e7a3",
+  "bo_mon_id": null,
+  "ngay_bat_dau": "2024-05-07",
+  "ngay_ket_thuc": "2024-05-24",
+  "ghichu": null,
+  "check": "0"
+},
+{
+  "_id": {
+    "$oid": "6642319ad319decac9dc61db"
+  },
+  "user_id": "6623cc682ba3844cdf41396a",
+  "id_khoa": "9",
+  "ten_gv": "Vũ Bảo  Tạo",
+  "lop": "DK11-CNTT1",
+  "ten_hoc_phan": "html",
+  "ky_id": "6638d6cac5674dd369c4e7a3",
+  "bo_mon_id": "663f6edeaf0f8106e3551dbf",
+  "ngay_bat_dau": "2024-04-29",
+  "ngay_ket_thuc": "2024-05-17",
+  "ghichu": "test ghi chú ghi chú ghi chú",
+  "check": "0"
+},
+{
+  "_id": {
+    "$oid": "66436cab7566b7105900a730"
+  },
+  "user_id": "6623cc682ba3844cdf413938",
+  "id_khoa": "11",
+  "ten_gv": "Mạc Thị  Nguyên",
+  "lop": "DK11-CK1",
+  "ten_hoc_phan": "co khi",
+  "ky_id": null,
+  "bo_mon_id": "663f7006af0f8106e3551dc6",
+  "ngay_bat_dau": "2024-05-13",
+  "ngay_ket_thuc": "2024-05-23",
+  "ghichu": null,
+  "check": "0"
+}]

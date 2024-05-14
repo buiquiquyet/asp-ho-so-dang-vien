@@ -1,0 +1,151 @@
+[{
+  "_id": {
+    "$oid": "663f6edeaf0f8106e3551dbf"
+  },
+  "id_khoa": "9",
+  "ten": "Công nghệ thông tin",
+  "user_id": "01007027"
+},
+{
+  "_id": {
+    "$oid": "663f6f8baf0f8106e3551dc0"
+  },
+  "id_khoa": "16",
+  "ten": "Công nghệ may",
+  "user_id": "01002006"
+},
+{
+  "_id": {
+    "$oid": "663f6f99af0f8106e3551dc1"
+  },
+  "id_khoa": "16",
+  "ten": "THTN may",
+  "user_id": "01002021"
+},
+{
+  "_id": {
+    "$oid": "663f6fb6af0f8106e3551dc2"
+  },
+  "id_khoa": "12",
+  "ten": "Thực hành thực nghiệm",
+  "user_id": "01010002"
+},
+{
+  "_id": {
+    "$oid": "663f6fdeaf0f8106e3551dc3"
+  },
+  "id_khoa": "12",
+  "ten": "Kỹ thuật điện tử",
+  "user_id": "01007026"
+},
+{
+  "_id": {
+    "$oid": "663f6fe9af0f8106e3551dc4"
+  },
+  "id_khoa": "12",
+  "ten": "Tự động hóa",
+  "user_id": "01006036"
+},
+{
+  "_id": {
+    "$oid": "663f6ff2af0f8106e3551dc5"
+  },
+  "id_khoa": "12",
+  "ten": "Hệ thống điện",
+  "user_id": "01006040"
+},
+{
+  "_id": {
+    "$oid": "663f7006af0f8106e3551dc6"
+  },
+  "id_khoa": "11",
+  "ten": "Cơ sở",
+  "user_id": "01004040"
+},
+{
+  "_id": {
+    "$oid": "663f700daf0f8106e3551dc7"
+  },
+  "id_khoa": "11",
+  "ten": "Thực hành",
+  "user_id": "01004013"
+},
+{
+  "_id": {
+    "$oid": "663f703aaf0f8106e3551dc8"
+  },
+  "id_khoa": "18",
+  "ten": "Tiếng Anh"
+},
+{
+  "_id": {
+    "$oid": "663f7040af0f8106e3551dc9"
+  },
+  "id_khoa": "18",
+  "ten": "Tiếng Trung",
+  "user_id": "01005013"
+},
+{
+  "_id": {
+    "$oid": "663f7048af0f8106e3551dca"
+  },
+  "id_khoa": "18",
+  "ten": "Du lịch",
+  "user_id": "01005012"
+},
+{
+  "_id": {
+    "$oid": "663f7057af0f8106e3551dcb"
+  },
+  "id_khoa": "17",
+  "ten": "Kế toán",
+  "user_id": ""
+},
+{
+  "_id": {
+    "$oid": "663f7063af0f8106e3551dcc"
+  },
+  "id_khoa": "17",
+  "ten": "Quản trị kinh doanh",
+  "user_id": ""
+},
+{
+  "_id": {
+    "$oid": "663f707caf0f8106e3551dcd"
+  },
+  "id_khoa": "15",
+  "ten": "Hóa thực phẩm",
+  "user_id": "01003014"
+},
+{
+  "_id": {
+    "$oid": "663f70a6af0f8106e3551dce"
+  },
+  "id_khoa": "20",
+  "ten": "Lý Hóa",
+  "user_id": ""
+},
+{
+  "_id": {
+    "$oid": "663f70adaf0f8106e3551dcf"
+  },
+  "id_khoa": "20",
+  "ten": "Toán",
+  "user_id": ""
+},
+{
+  "_id": {
+    "$oid": "663f70c1af0f8106e3551dd0"
+  },
+  "id_khoa": "19",
+  "ten": "Giáo dục chính trị",
+  "user_id": "01008027"
+},
+{
+  "_id": {
+    "$oid": "663f711eaf0f8106e3551dd1"
+  },
+  "id_khoa": "19",
+  "ten": "Giáo dục thể chất",
+  "user_id": ""
+}]
